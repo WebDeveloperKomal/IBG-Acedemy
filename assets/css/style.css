@@ -3605,7 +3605,7 @@ fieldset:disabled .btn {
 
 .btn-primary {
   --bs-btn-color: #000;
-  --bs-btn-bg: #e72d5A;
+  --bs-btn-bg: #309255;
   --bs-btn-border-color: #309255;
   --bs-btn-hover-color: #000;
   --bs-btn-hover-bg: #4fa26f;
@@ -16686,7 +16686,7 @@ ol {
 }
 
 img {
-  max-width: 100%;
+  max-width: 91%;
 }
 
 /* Section Style */
@@ -17833,7 +17833,7 @@ only screen and (max-width: 575px) {
 }
 
 .header-top-medal .top-info p i {
-  color: #e72d5A;
+  color: #309255;
   font-size: 20px;
   padding-right: 15px;
 }
@@ -17968,7 +17968,7 @@ only screen and (max-width: 767px) {
 }
 
 .header-menu ul li.active>a {
-  color: #e72d5a;
+  color: #309255;
 }
 
 .header-menu ul li.active>a::before {
@@ -18240,7 +18240,7 @@ only screen and (max-width: 767px) {
 }
 
 .header-sign-in-up ul li a.sign-up:hover {
-  background-color: #e72d5A;
+  background-color: #309255;
   color: #fff;
 }
 
@@ -19207,7 +19207,7 @@ only screen and (max-width: 767px) {
   width: 140px;
   height: 140px;
   text-align: center;
-  background-color: #e72d5a;
+  background-color: #309255;
   border-radius: 50%;
   display: flex;
   justify-content: center;
@@ -19564,7 +19564,7 @@ only screen and (min-width: 1200px) and (max-width: 1599px) {
 
 .courses-search.search-2 button {
   line-height: 46px;
-  background-color: #e72d5A;
+  background-color: #309255;
   color: #fff;
   width: 46px;
   height: 46px;
@@ -19800,7 +19800,7 @@ only screen and (max-width: 575px) {
 
 .single-courses .courses-content .courses-author .author .author-name .name-2 {
   position: relative;
-  color: #e72d5A;
+  color: #309255;
   font-family: "Montserrat", sans-serif;
   font-size: 14px;
   font-weight: 400;
@@ -20038,7 +20038,7 @@ only screen and (min-width: 768px) and (max-width: 991px) {
 
 .single-courses .courses-content .courses-rating .rating-progress-bar .rating-line {
   height: 100%;
-  background-color: #e72d5A;
+  background-color: #309255;
 }
 
 .single-courses .courses-content .courses-rating .rating-meta {
@@ -20176,7 +20176,7 @@ only screen and (max-width: 767px) {
 
 .courses-category-wrapper .category-menu li a.active,
 .courses-category-wrapper .category-menu li a:hover {
-  background-color: #e72d5A;
+  background-color: #309255;
   border-color: #309255;
   color: #fff;
 }
@@ -20409,7 +20409,7 @@ only screen and (max-width: 767px) {
 /*  4.5 - Download App CSS
 /*----------------------------------------*/
 .download-section {
-  background-color: #e72d5a;
+  background-color: #309255;
   position: relative;
   overflow: hidden;
 }
@@ -21296,7 +21296,7 @@ only screen and (max-width: 767px) {
 }
 
 .shape-icon-box .box-content .box-wrapper {
-  background-color: #e72d5A;
+  background-color: #309255;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -21759,7 +21759,7 @@ only screen and (max-width: 575px) {
 .courses-details .courses-details-admin .admin-author .author-content .Enroll {
   font-size: 14px;
   font-weight: 400;
-  color: #e72d5A;
+  color: #309255;
   display: inline-block;
   line-height: 22px;
 }
@@ -21871,7 +21871,7 @@ only screen and (min-width: 768px) and (max-width: 991px) {
 
 .courses-details-tab .details-tab-menu .nav li button:hover,
 .courses-details-tab .details-tab-menu .nav li button.active {
-  background-color: #e72d5A;
+  background-color: #309255;
   border-color: #309255;
   color: #fff;
 }
@@ -23242,8 +23242,8 @@ only screen and (max-width: 767px) {
 }
 
 .single-contact-info:hover .info-icon i {
-  background-color: #309255;
-  border-color: #309255;
+  background-color: #e72d5A;
+  border-color: #e72d5A;
   color: #fff;
 }
 
@@ -27652,7 +27652,7 @@ only screen and (max-width: 767px) {
 
 .footer-widget .widget-info li p i {
   font-size: 20px;
-  color: #e72d5A;
+  color: #309255;
 }
 
 .footer-widget .widget-info li p a {
@@ -27844,7 +27844,7 @@ only screen and (max-width: 767px) {
 .widget-information .info-price .price {
   font-size: 30px;
   font-weight: 700;
-  color: #e72d5A;
+  color: #309255;
   display: block;
 }
 
@@ -27859,7 +27859,7 @@ only screen and (max-width: 767px) {
 }
 
 .widget-information .info-list ul li i {
-  color: #e72d5A;
+  color: #309255;
   margin-right: 3px;
   font-size: 16px;
 }
@@ -27946,7 +27946,7 @@ only screen and (max-width: 767px) {
   line-height: 48px;
   text-align: center;
   border-radius: 10px;
-  background-color: #e72d5A;
+  background-color: #309255;
   border: 0;
   top: 6px;
   right: 6px;
@@ -28253,7 +28253,7 @@ only screen and (max-width: 767px) {
   box-shadow: 2px 4px 8px rgba(33, 40, 50, 0.15);
   transition: all 0.3s linear;
   color: #fff;
-  background-color: #e72d5A;
+  background-color: #309255;
 }
 
 .back-to-top:hover {
