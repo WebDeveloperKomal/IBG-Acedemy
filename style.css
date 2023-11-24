@@ -17905,7 +17905,7 @@ only screen and (max-width: 575px) {
 only screen and (min-width: 768px) and (max-width: 991px),
 only screen and (max-width: 767px) {
   .header-logo a img {
-    width: 160px;
+    width: 214px;
   }
 }
 
