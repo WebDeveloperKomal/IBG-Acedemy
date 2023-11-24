@@ -27684,6 +27684,8 @@ only screen and (max-width: 767px) {
 
 .footer-widget .widget-link {
   padding-top: 26px;
+
+
 }
 
 .footer-widget .widget-link li {
@@ -27754,6 +27756,8 @@ only screen and (max-width: 767px) {
 .footer-widget-link {
   display: flex;
   flex-wrap: wrap;
+  margin-left: 20px;
+
 }
 
 .footer-widget-link .footer-widget {
