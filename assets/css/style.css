@@ -28273,16 +28273,16 @@ only screen and (max-width: 767px) {
 /* --------------------------------------------------------------------- */
 
 
-/* @media only screen and (max-width: 575px) {
+@media only screen and (max-width: 575px) {
   .footer-widget .widget-link {
     margin-left: -52px;
   }
 
-  .footer-widget-title {f
+  .footer-widget-title {
     margin-left: -50px;
   }
 
   #sub {
     margin-left: 3px;
   }
-} */
+}
