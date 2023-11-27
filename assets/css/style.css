@@ -21107,7 +21107,8 @@ only screen and (min-width: 768px) and (max-width: 991px) {
 @media only screen and (max-width: 575px) {
   .page-banner .shape-author {
     bottom: 6%;
-    width: 80px;
+    width: 90px;
+    height: 92px;
   }
 }
 
