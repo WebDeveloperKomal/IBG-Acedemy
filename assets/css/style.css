@@ -1,5 +1,6 @@
 @charset "UTF-8";
 
+/* file change */
 /* *********************style.css file*************************** */
 /*-----------------------------------------------------------------------------------
 
@@ -22958,6 +22959,9 @@ only screen and (max-width: 767px) {
   margin-top: 50px;
 }
 
+
+
+
 /*--
 /*  4.17 - 404 Error CSS
 /*----------------------------------------*/
@@ -27755,6 +27759,7 @@ only screen and (max-width: 767px) {
 .footer-widget-link {
   display: flex;
   flex-wrap: wrap;
+  margin-left: 57px;
 }
 
 .footer-widget-link .footer-widget {
@@ -28261,3 +28266,22 @@ only screen and (max-width: 767px) {
   color: #fff;
   background-color: #212832;
 }
+
+
+
+/* --------------------------------------------------------------------- */
+
+
+/* @media only screen and (max-width: 575px) {
+  .footer-widget .widget-link {
+    margin-left: -52px;
+  }
+
+  .footer-widget-title {f
+    margin-left: -50px;
+  }
+
+  #sub {
+    margin-left: 3px;
+  }
+} */
