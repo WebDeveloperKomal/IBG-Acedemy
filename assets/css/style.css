@@ -16688,7 +16688,7 @@ ol {
 }
 
 img {
-  max-width: 80%;
+  max-width: 79%;
 }
 
 /* Section Style */
@@ -23248,8 +23248,8 @@ only screen and (max-width: 767px) {
 }
 
 .single-contact-info:hover .info-icon i {
-  background-color: #e72d5A;
-  border-color: #e72d5A;
+  background-color: #309255;
+  border-color: #309255;
   color: #fff;
 }
 
@@ -28285,4 +28285,12 @@ only screen and (max-width: 767px) {
   #sub {
     margin-left: 3px;
   }
+}
+
+
+/* ---------------------------------------------------------------------------------- */
+
+
+#logo {
+  margin-left: -18px;
 }
