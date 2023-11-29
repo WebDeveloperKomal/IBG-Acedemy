@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <style>
+        /* Add your custom styles here */
+        #chat-container {
+            max-width: 400px;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        #chat-messages {
+            max-height: 300px;
+            overflow-y: auto;
+            margin-bottom: 10px;
+        }
+
+        .chat-message {
+            margin-bottom: 10px;
+            opacity: 0;
+            animation: fadeIn 0.5s forwards;
+        }
+
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+    <title>Animate Chatbot</title>
+</head>
+
+<body>
+
+    <div id="chat-container">
+        <div id="chat-messages"></div>
+        <div class="input-group">
+            <input type="text" id="user-input" class="form-control" placeholder="Type a message...">
+            <div class="input-group-append">
+                <button class="btn btn-primary" onclick="sendMessage()">Send</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function sendMessage() {
+            var userInput = document.getElementById('user-input').value;
+            if (userInput.trim() === '') {
+                return;
+            }
+
+            var chatMessages = document.getElementById('chat-messages');
+
+            // User message
+            var userMessage = document.createElement('div');
+            userMessage.className = 'alert alert-primary chat-message animated fadeIn';
+            userMessage.innerHTML = '<strong>You:</strong> ' + userInput;
+            chatMessages.appendChild(userMessage);
+
+            // Bot response (replace with your own logic)
+            var botResponse = 'I am a simple chatbot. You said: ' + userInput;
+            var botMessage = document.createElement('div');
+            botMessage.className = 'alert alert-secondary chat-message animated fadeIn';
+            botMessage.innerHTML = '<strong>Bot:</strong> ' + botResponse;
+            chatMessages.appendChild(botMessage);
+
+            document.getElementById('user-input').value = '';
+            chatMessages.scrollTop = chatMessages.scrollHeight;
+        }
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

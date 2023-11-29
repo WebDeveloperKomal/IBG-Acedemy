@@ -28299,3 +28299,18 @@ only screen and (max-width: 767px) {
   margin-left: 120px;
 }
 
+@media only screen and (max-width: 575px) {
+  #homepage {
+    width: 225px;
+    height: 204px;
+    margin-left: 35px;
+  }
+}
+
+@media only screen and (max-width: 721px) {
+  #homepage {
+    width: 388px;
+    height: 351px;
+    margin-left: 62px;
+  }
+}
