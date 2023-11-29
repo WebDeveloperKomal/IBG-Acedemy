@@ -16688,7 +16688,7 @@ ol {
 }
 
 img {
-  max-width: 79%;
+  max-width: 100%;
 }
 
 /* Section Style */
@@ -28293,4 +28293,8 @@ only screen and (max-width: 767px) {
 
 #logo {
   margin-left: -18px;
+}
+
+#homepage {
+  margin-left: 120px;
 }
