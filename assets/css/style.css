@@ -28295,7 +28295,7 @@ only screen and (max-width: 767px) {
   margin-left: -18px;
 }
 
-#homepage {
+/* #homepage {
   margin-left: 120px;
 }
 
@@ -28312,5 +28312,11 @@ only screen and (max-width: 767px) {
     width: 388px;
     height: 351px;
     margin-left: 62px;
+  }
+} */
+
+@media only screen and (max-width: 1366px) {
+  #homepage {
+    margin-left: 60px;
   }
 }
