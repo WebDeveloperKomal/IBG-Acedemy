@@ -1,15 +1,15 @@
-function saveRegister() {
+function saveContact() {
 
-    var saveRegister = {
+    var saveContact = {
         name: document.getElementById('name').value,
         email: document.getElementById('email').value,
-        password: document.getElementById('password').value,
-        confirmPassword: document.getElementById('confirmPassword').value,
+        subject: document.getElementById('subject').value,
+        message: document.getElementById('message').value,
     }
 
-    console.log(JSON.stringify(saveRegister));
+    console.log(JSON.stringify(saveContact));
 
-    if (saveRegister != null) {
+    if (saveContact != null) {
         alert("message send successfully!")
     }
 
@@ -18,12 +18,11 @@ function saveRegister() {
     headers.append('Accept', 'application/json');
 
 
-    fetch("http://localhost:8080/register", {
+    fetch("http://localhost:8080/contacts", {
         method: 'POST',
-        body: JSON.stringify(saveRegister),
+        body: JSON.stringify(saveContact),
         headers: headers,
     })
-
 
         .then(response => response.json())
         .then(json => console.log(json))

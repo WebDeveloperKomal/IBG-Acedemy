@@ -54,7 +54,6 @@ const generateResponse = (chatElement) => {
 
 
 
-
 const handleChat = () => {
     userMessage = chatInput.value.trim(); // Get user entered message and remove extra whitespace
     if (!userMessage) return;
@@ -75,6 +74,7 @@ const handleChat = () => {
         generateResponse(incomingChatLi);
     }, 600);
 }
+
 
 chatInput.addEventListener("input", () => {
     // Adjust the height of the input textarea based on its content
