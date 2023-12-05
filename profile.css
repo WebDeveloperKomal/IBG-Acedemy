@@ -1,5 +1,5 @@
 body {
-    background: #f7f7ff;
+    background: #309255;
     margin-top: 20px;
 }
 
@@ -29,3 +29,7 @@ body {
     background-color: #3a8b59;
     color: white;
 } */
+
+.bg-primary {
+    background-color: #309255 !important;
+}

@@ -1,4 +1,5 @@
-fetch('http://localhost:8080/add-loginform', {
+
+fetch('https://jsonplaceholder.typicode.com/posts', {
     method: 'POST',
     body: JSON.stringify({
         title: 'foo',
@@ -12,5 +13,6 @@ fetch('http://localhost:8080/add-loginform', {
     .then((response) => response.json())
     .then((json) => console.log(json));
 
-console.log(10);
+
+console.log(2);
 
