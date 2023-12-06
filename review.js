@@ -1,16 +1,15 @@
-function saveRegister() {
+function saveReview() {
 
-    var saveRegister = {
+    var saveReview = {
         name: document.getElementById('name').value,
         email: document.getElementById('email').value,
-        password: document.getElementById('password').value,
-        confirmPassword: document.getElementById('confirmPassword').value,
+        comment: document.getElementById('comment').value,
     }
 
-    console.log(JSON.stringify(saveRegister));
+    console.log(JSON.stringify(saveReview));
 
-    if (saveRegister != null) {
-        alert("message send successfully!")
+    if (saveReview != null) {
+        alert("message send successfully")
     }
 
     let headers = new Headers();
@@ -18,14 +17,14 @@ function saveRegister() {
     headers.append('Accept', 'application/json');
 
 
-    fetch("http://localhost:8080/register", {
+    fetch("http://localhost:8080/dummy", {
         method: 'POST',
-        body: JSON.stringify(saveRegister),
+        body: JSON.stringify(saveReview),
         headers: headers,
     })
-
 
         .then(response => response.json())
         .then(json => console.log(json))
         .then(error => console.error('Error:', error));
+
 }

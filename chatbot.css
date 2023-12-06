@@ -9,7 +9,7 @@
 }
 
 body {
-    background: #9cc2aa;
+    background: #e6e6e6;
 }
 
 .chatbot-toggler {
@@ -25,7 +25,7 @@ body {
     align-items: center;
     justify-content: center;
     border-radius: 50%;
-    background: #309255;
+    background-color: #309255;
     transition: all 0.2s ease;
 }
 
