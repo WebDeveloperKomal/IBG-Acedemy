@@ -24,7 +24,6 @@ function saveRegister() {
         headers: headers,
     })
 
-
         .then(response => response.json())
         .then(json => console.log(json))
         .then(error => console.error('Error:', error));
