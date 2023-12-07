@@ -1,6 +1,7 @@
 // fetch('http://localhost:8080/login', {
-//     method: 'POST',
+//     method: 'PUT',
 //     body: JSON.stringify({
+//         id: 1,
 //         title: 'foo',
 //         body: 'bar',
 //         userId: 1,

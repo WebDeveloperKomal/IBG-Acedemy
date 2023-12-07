@@ -1,3 +1,6 @@
+// -----------------------------POST---------------------------------
+
+
 function saveReview() {
 
     var saveReview = {
@@ -28,3 +31,31 @@ function saveReview() {
         .then(error => console.error('Error:', error));
 
 }
+
+// ---------------------------GET------------------------------------------------
+
+
+
+fetch('http://localhost:8080/dummy', {
+    method: 'PUT',
+    body: JSON.stringify({
+        id: 1,
+        title: 'foo',
+        body: 'bar',
+        userId: 1,
+    }),
+    headers: {
+        'Content-type': 'application/json; charset=UTF-8',
+    },
+})
+    .then((response) => response.json())
+    .then((json) => console.log(json));
+
+
+
+// -------------------------DELETE---------------------------------------------
+
+
+fetch('http://localhost:8080/dummy', {
+    method: 'DELETE',
+});  
