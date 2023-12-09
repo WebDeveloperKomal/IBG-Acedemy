@@ -19187,7 +19187,7 @@ only screen and (min-width:768px) and (max-width:991px) {
 }
 
 .header-top-left p a {
-    color: #309255;
+    color: whitesmoke;
     display: inline-block;
     font-weight: 500
 }
@@ -19288,7 +19288,7 @@ only screen and (min-width:768px) and (max-width:991px) {
 }
 
 .header-top-medal .top-info p i {
-    color: #309255;
+    color: whitesmoke;
     font-size: 20px;
     padding-right: 15px
 }
@@ -30249,5 +30249,3 @@ only screen and (min-width:768px) and (max-width:991px) {
 
 
 /* ---------------------------------------------------------- */
-
-
