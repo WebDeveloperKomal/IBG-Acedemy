@@ -28,3 +28,6 @@ function saveRegister() {
         .then(json => console.log(json))
         .then(error => console.error('Error:', error));
 }
+
+
+// --------------------------------------------------------------------------
