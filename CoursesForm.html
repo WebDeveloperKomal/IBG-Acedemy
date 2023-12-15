@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>IBG Academy | Courses Form</title>
+    <meta name="robots" content="noindex, follow" />
+    <meta name="description" content="">
+
+    <script src="CoursesForm.js"></script>
+
+    <!-- Bootstrap CSS link -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="favicon logo.png" style="width: 250px; height: 90px;">
+
+
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .form-container {
+            max-width: 500px;
+            width: 100%;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            background-color: #309255
+        }
+
+
+        .add-module-btn {
+            margin-top: 10px;
+        }
+    </style>
+
+
+</head>
+
+<body>
+
+    <div class="form-container">
+
+        <div class="form-group">
+            <label for="courseName">Course Name:</label>
+            <input type="text" class="form-control" id="courseName" placeholder="Enter course name">
+        </div>
+
+
+        <div class="form-group">
+            <label for="moduleName">Module:</label>
+            <input type="text" class="form-control" id="moduleName" placeholder="Enter module name">
+        </div>
+
+
+        <div class="form-group">
+            <label for="lesson1">Lesson 1:</label>
+            <input type="text" class="form-control" id="lesson1" placeholder="Enter lesson 1">
+        </div>
+
+
+        <div class="form-group">
+            <label for="lesson2">Lesson 2:</label>
+            <input type="text" class="form-control" id="lesson2" placeholder="Enter lesson 2">
+        </div>
+
+
+        <div class="form-group">
+            <label for="lesson3">Lesson 3:</label>
+            <input type="text" class="form-control" id="lesson3" placeholder="Enter lesson 3">
+        </div>
+
+
+        <button class="btn btn-primary add-module-btn" onclick="saveCourses(); reset; return false;">+ Add More
+            Module</button>
+
+
+    </div>
+
+    <!-- Bootstrap JS and Popper.js (required for Bootstrap components) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+
+    <script>
+        $(document).ready(function () {
+            $('.add-module-btn').click(function () {
+                var newModuleInput = '<div class="form-group">' +
+                    '<label for="moduleName">Module:</label>' +
+                    '<input type="text" class="form-control module" placeholder="Enter module name">' +
+                    '</div>' +
+                    '<div class="form-group">' +
+                    '<label for="lesson1">Lesson 1:</label>' +
+                    '<input type="text" class="form-control" placeholder="Enter lesson 1">' +
+                    '</div>' +
+                    '<div class="form-group">' +
+                    '<label for="lesson2">Lesson 2:</label>' +
+                    '<input type="text" class="form-control" placeholder="Enter lesson 2">' +
+                    '</div>' +
+                    '<div class="form-group">' +
+                    '<label for="lesson3">Lesson 3:</label>' +
+                    '<input type="text" class="form-control" placeholder="Enter lesson 3">' +
+                    '</div>';
+
+                $('.form-container').append(newModuleInput);
+            });
+        });
+    </script>
+
+
+</body>
+
+</html>

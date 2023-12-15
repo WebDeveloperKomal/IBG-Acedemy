@@ -4,7 +4,11 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>IBG Academy | Overview</title>
+
+    <title>IBG Academy | Courses Purchased</title>
+
+    <script src="CoursePurchase.js"></script>
+
     <meta name="robots" content="noindex, follow" />
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -43,24 +47,102 @@
 
 </head>
 
+
+<style>
+    body {
+        font-family: 'Arial', sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 0;
+
+    }
+
+    .form-container {
+        max-width: 600px;
+        margin: 150px auto;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+    }
+
+    .form-group {
+        margin-bottom: 20px;
+    }
+
+    .form-group label {
+        display: block;
+        font-weight: bold;
+        margin-bottom: 8px;
+    }
+
+    .form-group input {
+        width: 100%;
+        padding: 10px;
+        box-sizing: border-box;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+
+    .form-group textarea {
+        width: 100%;
+        padding: 10px;
+        box-sizing: border-box;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        resize: vertical;
+    }
+
+    .form-group select {
+        width: 100%;
+        padding: 10px;
+        box-sizing: border-box;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+
+    .form-group button {
+        background-color: #007bff;
+        color: #fff;
+        padding: 10px 15px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    .form-group button:hover {
+        background-color: #0056b3;
+    }
+</style>
+
 <body>
 
-    <div class="main-wrapper main-wrapper-02">
+    <div class="main-wrapper">
 
         <!-- Login Header Start -->
         <div class="section login-header">
+
             <!-- Login Header Wrapper Start -->
             <div class="login-header-wrapper navbar navbar-expand">
 
+
+
                 <!-- Header Logo Start -->
-                <div class="login-header-logo">
-                    <a href="index.html"><img src="final logo 1.png" alt="Logo" width="50px" height="44px"></a></li>
+                <div class="login-header-logo logo-2">
+                    <a href="index.html"><img src="final logo 1.png" alt="Logo" width="47px" height="44px"></a></li>
+                    <a href="index.html"><img src="final logo2.png" alt="Logo" width="170px" height="36px"
+                            id="logo"></a></li>
                 </div>
                 <!-- Header Logo End -->
 
+
+
+
                 <!-- Header Search Start -->
-                <div class="login-header-search dropdown">
+                <div class="login-header-search search-2 dropdown">
                     <button class="search-toggle" data-bs-toggle="dropdown"><i class="flaticon-loupe"></i></button>
+
 
                     <div class="search-input dropdown-menu">
                         <form action="#">
@@ -68,18 +150,27 @@
                         </form>
                     </div>
 
+
                 </div>
                 <!-- Header Search End -->
 
+
+
+
+
                 <!-- Header Action Start -->
-                <div class="login-header-action ml-auto">
+                <div class="login-header-action action-2 ml-auto">
                     <div class="dropdown">
+
                         <button class="action notification" data-bs-toggle="dropdown">
                             <i class="flaticon-notification"></i>
                             <span class="active"></span>
                         </button>
+
+
                         <div class="dropdown-menu dropdown-notification">
                             <ul class="notification-items-list">
+
 
                                 <li class="notification-item">
                                     <span class="notify-icon bg-success text-white"><i
@@ -95,18 +186,19 @@
                                 </li>
 
 
+
                                 <li class="notification-item">
                                     <span class="notify-icon bg-success text-white"><i
                                             class="icofont-shopping-cart"></i></span>
-
                                     <div class="dropdown-body">
                                         <a href="#">
                                             <p><strong>Jennifer</strong> purchased Light Dashboard 2.0.</p>
                                         </a>
                                     </div>
-
                                     <span class="notify-time">3:20 am</span>
                                 </li>
+
+
 
 
                                 <li class="notification-item">
@@ -134,6 +226,7 @@
                                 </li>
 
 
+
                                 <li class="notification-item">
                                     <span class="notify-icon bg-success text-white"><i class="icofont-image"></i></span>
                                     <div class="dropdown-body">
@@ -145,28 +238,44 @@
                                     </div>
                                     <span class="notify-time">3:20 am</span>
                                 </li>
+
+
+
                             </ul>
+
+
+
+
                             <a class="all-notification" href="#">See all notifications <i
                                     class="icofont-simple-right"></i></a>
                         </div>
                     </div>
+
+
+
 
                     <a class="action author" href="#">
                         <img src="profile.jpg" alt="Author">
                     </a>
 
                     <div class="dropdown">
+
+
                         <button class="action more" data-bs-toggle="dropdown">
                             <span></span>
                             <span></span>
                             <span></span>
                         </button>
+
+
                         <ul class="dropdown-menu">
                             <li><a class="" href="profile.html"><i class="icofont-user"></i> Profile</a></li>
                             <li><a class="" href="chatbot.html"><i class="icofont-inbox"></i> Inbox</a>
                             </li>
                             <li><a class="" href="logOut.html"><i class="icofont-logout"></i> Log Out</a></li>
                         </ul>
+
+
                     </div>
                 </div>
                 <!-- Header Action End -->
@@ -176,117 +285,94 @@
         </div>
         <!-- Login Header End -->
 
-        <!-- Courses Admin Start -->
-        <div class="section overflow-hidden position-relative" id="wrapper">
 
-            <!-- Sidebar Wrapper Start -->
-            <div class="sidebar-wrapper">
-                <div class="menu-list">
-                    <a class="active" href="courses-admin.html"><img src="assets/images/menu-icon/icon-1.png"
-                            alt="Icon"></a>
-                    <a href="messages.html"><img src="assets/images/menu-icon/icon-2.png" alt="Icon"></a>
-                    <a href="overview.html"><img src="assets/images/menu-icon/icon-3.png" alt="Icon"></a>
-                    <a href="engagement.html"><img src="assets/images/menu-icon/icon-4.png" alt="Icon"></a>
-                    <a href="traffic-conversion.html"><img src="assets/images/menu-icon/icon-5.png" alt="Icon"></a>
+        <!-- ----------------------------------------------------------------------------------------------------- -->
+
+
+        <div class="form-container">
+            <h2>Course Purchase</h2>
+            <form action="#" method="post">
+                <div class="form-group">
+                    <label for="name">Course Name:</label>
+                    <input type="text" id="name" name="name" required>
                 </div>
-            </div>
-            <!-- Sidebar Wrapper End -->
 
-            <div class="page-content-wrapper py-0">
-
-                <!-- Admin Tab Menu Start -->
-                <div class="nav flex-column nav-pills admin-tab-menu">
-                    <a href="overview.html" class="active">Overview</a>
-                    <a href="students.html">Student’s</a>
-                    <a href="reviews.html">Review’s</a>
-                    <a href="engagement.html">Course Engagement</a>
-                    <a href="traffic-conversion.html">Traffic & Conversion</a>
+                <div class="form-group">
+                    <label for="description">Description:</label>
+                    <textarea id="description" name="description" rows="4" required></textarea>
                 </div>
-                <!-- Admin Tab Menu End -->
 
-                <!-- Page Content Wrapper Start -->
-                <div class="main-content-wrapper">
-                    <div class="container-fluid">
-
-                        <!-- Overview Top Start -->
-                        <div class="admin-top-bar flex-wrap">
-                            <div class="courses-select">
-                                <select>
-                                    <option data-display="All Courses">All Courses</option>
-                                    <option value="1">option</option>
-                                    <option value="2">option</option>
-                                    <option value="3">option</option>
-
-                                </select>
-                            </div>
-
-                            <div class="overview-box">
-                                <div class="single-box">
-                                    <h5 class="title">Total Revenue</h5>
-                                    <div class="count">₹568.00</div>
-                                    <p><span>₹235.00</span> This months</p>
-                                </div>
-
-                                <div class="single-box">
-                                    <h5 class="title">Total Enrollment’s</h5>
-                                    <div class="count">2,570</div>
-                                    <p><span>345</span> This months</p>
-                                </div>
-
-                                <div class="single-box">
-                                    <h5 class="title">Instgructor Rating</h5>
-                                    <div class="count">
-                                        4.5
-
-                                        <span class="rating-star">
-                                            <span class="rating-bar" style="width: 80%;"></span>
-                                        </span>
-
-                                    </div>
-                                    <p><span>58</span> This months</p>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Overview Top End -->
-
-
-
-                        <!-- Graph Top Start -->
-                        <div class="graph">
-                            <div class="graph-title">
-                                <h4 class="title">Get top insights about your performance</h4>
-
-                                <div class="months-select">
-                                    <select>
-                                        <option data-display="Last 12 months">Last 12 months</option>
-                                        <option value="1">Last 6 months</option>
-                                        <option value="1">Last 3 months</option>
-                                        <option value="1">Last 2 months</option>
-                                        <option value="1">Last 1 months</option>
-                                        <option value="1">Last 1 week</option>
-                                    </select>
-                                </div>
-                            </div>
-
-                            <div class="graph-content">
-                                <div id="uniqueReport"></div>
-                            </div>
-
-                            <div class="graph-btn">
-                                <a class="btn btn-primary btn-hover-dark" href="#">Revenue Report <i
-                                        class="icofont-rounded-down"></i></a>
-                            </div>
-                        </div>
-                        <!-- Graph Top End -->
-
-                    </div>
+                <div class="form-group">
+                    <label for="instructor">Instructor:</label>
+                    <input type="text" id="instructor" name="instructor" required>
                 </div>
-                <!-- Page Content Wrapper End -->
 
-            </div>
+                <div class="form-group">
+                    <label for="courses">Courses:</label>
+                    <input type="text" id="courses" name="courses" required>
+                </div>
 
+                <div class="form-group">
+                    <label for="timing">Timing:</label>
+                    <input type="time" id="timing" name="timing" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="duration">Course Duration (hours):</label>
+                    <input type="number" id="duration" name="duration" min="1" required>
+                </div>
+
+
+                <div class="form-group">
+                    <button type="submit" style="background-color: #309255;"
+                        onclick="saveSubmit(); reset; return false;">Submit</button>
+                </div>
+            </form>
         </div>
-        <!-- Courses Admin End -->
+
+
+
+
+
+        <!-- ------------------------------------------------------------------------------------------------------ -->
+
+        <!-- Download App Start -->
+        <div class="section section-padding download-section" style="margin-top: -80px;">
+
+            <div class="app-shape-1"></div>
+            <div class="app-shape-2"></div>
+            <div class="app-shape-3"></div>
+            <div class="app-shape-4"></div>
+
+            <div class="container">
+
+                <!-- Download App Wrapper Start -->
+                <div class="download-app-wrapper mt-n6">
+
+                    <!-- Section Title Start -->
+                    <div class="section-title section-title-white">
+                        <h5 class="sub-title">Ready to start?</h5>
+                        <h2 class="main-title">Download our mobile app. for easy to start your course.</h2>
+                    </div>
+                    <!-- Section Title End -->
+
+                    <img class="shape-1 animation-right" src="assets/images/shape/shape-14.png" alt="Shape">
+
+                    <!-- Download App Button End -->
+                    <div class="download-app-btn">
+                        <ul class="app-btn">
+                            <li><a href="#"><img src="assets/images/google-play.png" alt="Google Play"></a></li>
+                            <li><a href="#"><img src="assets/images/app-store.png" alt="App Store"></a></li>
+                        </ul>
+                    </div>
+                    <!-- Download App Button End -->
+
+                </div>
+                <!-- Download App Wrapper End -->
+
+            </div>
+        </div>
+        <!-- Download App End -->
 
         <!-- Footer Start  -->
         <div class="section footer-section">
@@ -314,6 +400,7 @@
                                         Hadapsar, Pune
                                         Maharashtra, India: 411028.</p>
                                 </div>
+
 
                                 <ul class="widget-info">
                                     <li>
@@ -372,7 +459,6 @@
                                         <li><a href="#">Customer Support</a></li>
                                         <li><a href="#">Course FAQ’s</a></li>
                                         <li><a href="faq.html">FAQ</a></li>
-
                                     </ul>
 
                                 </div>
@@ -381,7 +467,6 @@
 
                             </div>
                             <!-- Footer Widget Link End -->
-
                         </div>
                         <div class="col-lg-3 col-md-6 order-md-2 order-lg-3">
 
@@ -390,9 +475,7 @@
                                 <h4 class="footer-widget-title" id="sub">Subscribe</h4>
 
                                 <div class="widget-subscribe">
-                                    <p>Stay connected with the latest updates! Subscribe to our newsletter for exclusive
-                                        insights, upcoming courses, and exciting opportunities – because your
-                                        educational journey is just a click away.</p>
+                                    <p>Lorem Ipsum has been them an industry printer took a galley make book.</p>
 
                                     <div class="widget-form">
                                         <form action="#">
@@ -475,10 +558,6 @@
 
     <!-- Main JS -->
     <script src="assets/js/main.js"></script>
-
-    <!-- Charts JS -->
-    <script src="assets/js/plugins/apexcharts.min.js"></script>
-    <script src="assets/js/overview.js"></script>
 
 </body>
 
