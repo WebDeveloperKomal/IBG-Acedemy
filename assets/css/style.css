@@ -17381,7 +17381,9 @@ only screen and (max-width: 575px) {
 }
 
 .single-form input:not([type=checkbox]):not([type=radio]),
-.single-form textarea {
+.single-form textarea,
+.userRoles,
+.tag {
   width: 100%;
   height: 60px;
   padding: 0 25px;
@@ -17391,6 +17393,13 @@ only screen and (max-width: 575px) {
   border: 1px solid rgba(48, 146, 85, 0.2);
   border-radius: 10px;
   background-color: #fff;
+}
+
+.single-form input:not([type=checkbox]):not([type=radio]),
+.single-form textarea,
+.userRoles,
+.tag {
+  padding-top: 10px;
 }
 
 .single-form input:not([type=checkbox]):not([type=radio])::-webkit-input-placeholder,
@@ -21343,7 +21352,7 @@ only screen and (max-width: 767px) {
   border-radius: 10px;
   position: absolute;
   top: 50px;
-  right: 30px;
+  right: 433px;
 }
 
 .about-images .about-years .years-icon {
@@ -28334,6 +28343,26 @@ only screen and (max-width: 767px) {
     width: 414px;
     height: 374px;
   }
+
+  .shape-author {
+    height: 150px;
+    width: 150px;
+  }
+
+  .about-images .about-years {
+    width: 125px;
+    background-color: #309255;
+    padding: 10px 20px;
+    text-align: center;
+    border-radius: 10px;
+    position: absolute;
+    top: 50px;
+    right: 520px;
+  }
+
+  #additionalInterest {
+    margin-top: 20px;
+  }
 }
 
 @media only screen and (max-width: 425px) {
@@ -28341,6 +28370,32 @@ only screen and (max-width: 767px) {
     width: 225px;
     height: 204px;
     margin-left: 37px;
+  }
+
+  .about-images .about-years {
+    width: 111px;
+    height: 130px;
+    background-color: #309255;
+    padding: 10px 20px;
+    text-align: center;
+    border-radius: 10px;
+    position: absolute;
+    top: 50px;
+    right: 265px;
+  }
+
+  .about-images .about-years .years-icon {
+    background-color: #fff;
+    text-align: center;
+    width: 78px;
+    height: 78px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -30px;
+    position: relative;
+    margin-left: -4px;
   }
 }
 
@@ -28350,4 +28405,34 @@ only screen and (max-width: 767px) {
     height: 151px;
     margin-left: 27px;
   }
+
+  .about-images .about-years {
+    width: 111px;
+    height: 130px;
+    background-color: #309255;
+    padding: 10px 20px;
+    text-align: center;
+    border-radius: 10px;
+    position: absolute;
+    top: 78px;
+    right: 4px;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .about-images .about-years {
+    width: 111px;
+    height: 130px;
+    background-color: #309255;
+    padding: 10px 20px;
+    text-align: center;
+    border-radius: 10px;
+    position: absolute;
+    top: 109px;
+    right: 4px;
+  }
+}
+
+#additionalInterest {
+  margin-top: 20px;
 }
