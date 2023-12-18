@@ -1,82 +1,41 @@
-// function saveSubmit() {
+function saveForm() {
+    // Get the value of instructorRating from the input field
 
-//     var studentRatingElement = document.getElementById('studentRating');
-//     var selectedStudentRating = studentRatingElement.value;
+    var instructorRatingValue = document.getElementById('instructorRating').value;
 
-//     var saveSubmit = {
-//         studentId: document.getElementById('studentId').value,
-//         courseId: document.getElementById('courseId').value,
-//         studentRating: selectedStudentRating,
-//     };
+    // Parse instructorRating as a floating-point number
 
+    var instructorRating = parseFloat(instructorRatingValue);
 
-//     console.log(JSON.stringify(saveSubmit));
+    // Check if instructorRating is a valid number
 
+    if (!isNaN(instructorRating)) {
+        // Create an object with studentID, courseID, and instructorRating
 
-//     if (saveSubmit != null) {
-//         alert("Message sent successfully!");
-//     }
+        var saveFormData = {
+            studentID: document.getElementById('studentID').value,
+            courseID: document.getElementById('courseID').value,
+            instructorRating: instructorRating
+        };
 
-//     let headers = new Headers();
-//     headers.append('Content-Type', 'application/json');
-//     headers.append('Accept', 'application/json');
+        console.log(JSON.stringify(saveFormData));
 
-
-//     fetch("http://localhost:8080/courserating", {
-//         method: 'POST',
-//         body: JSON.stringify(saveSubmit),
-//         headers: headers,
-//     })
-
-
-//         .then(response => response.json())
-//         .then(json => console.log(json))
-//         .catch(error => console.error('Error:', error));
-// }
-
-
-// -------------------------------------------------------------------------------------
-
-
-
-function saveSubmit() {
-    var studentIdElement = document.getElementById('studentId');
-    var courseIdElement = document.getElementById('courseId');
-    var studentRatingElement = document.getElementById('studentRating');
-
-
-    var studentId = studentIdElement.value;
-    var courseId = courseIdElement.value;
-    var studentRating = parseFloat(studentRatingElement.value); // Convert to float
-
-
-    var saveSubmitData = {
-        studentId: studentId,
-        courseId: courseId,
-        studentRating: studentRating,
-    };
-
-
-    console.log(JSON.stringify(saveSubmitData));
-
-
-    if (saveSubmitData != null) {
         alert("Message sent successfully!");
+
+        let headers = new Headers();
+        headers.append('Content-Type', 'application/json');
+        headers.append('Accept', 'application/json');
+
+        fetch("http://localhost:8080/courserating", {
+            method: 'POST',
+            body: JSON.stringify(saveFormData),
+            headers: headers,
+        })
+            .then(response => response.json())
+            .then(json => console.log(json))
+            .catch(error => console.error('Error:', error));
+    } else {
+
+        alert("Invalid instructorRating value. Please enter a valid number.");
     }
-
-    let headers = new Headers();
-    headers.append('Content-Type', 'application/json');
-    headers.append('Accept', 'application/json');
-
-
-    fetch("http://localhost:8080/courserating", {
-        method: 'POST',
-        body: JSON.stringify(saveSubmitData),
-        headers: headers,
-    })
-
-        .then(response => response.json())
-        .then(json => console.log(json))
-        .catch(error => console.error('Error:', error));
 }
-

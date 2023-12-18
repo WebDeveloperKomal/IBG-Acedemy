@@ -6,7 +6,9 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title>IBG Academy | After-enroll</title>
 
+    <script src="StudentRatingForm.js"></script>
     <script src="InstructorRatingForm.js"></script>
+    <script src="questionAnswer.js"></script>
 
     <meta name="robots" content="noindex, follow" />
     <meta name="description" content="">
@@ -572,11 +574,14 @@
                                     <!-- Student Rating Form Start -->
                                     <div class="student-rating-form">
                                         <div class="row">
+
                                             <div class="col-lg-4">
                                                 <div class="enroll-tab-title">
                                                     <h3 class="title">Student Rating Form</h3>
                                                 </div>
                                             </div>
+
+
                                             <div class="col-lg-8">
                                                 <div class="enroll-tab-content">
                                                     <!-- Student Rating Form Start -->
@@ -653,7 +658,8 @@
                                                         </div>
 
                                                         <div class="single-form">
-                                                            <button type="button" onclick="saveSubmit()"
+                                                            <button type="button"
+                                                                onclick="saveForm(); reset; return false;"
                                                                 style="background-color: #309255; color: white; border: none;">Submit
                                                                 Rating</button>
                                                         </div>
@@ -704,6 +710,7 @@
 
                                                         <div class="single-form">
                                                             <button type="button"
+                                                                onclick="questionAnswerForm(); reset; return false;"
                                                                 style="background-color: #309255; color: white; border: none;">Submit</button>
                                                         </div>
                                                     </form>

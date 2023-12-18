@@ -28349,7 +28349,7 @@ only screen and (max-width: 767px) {
     width: 150px;
   }
 
-  .about-images .about-years {
+  /* .about-images .about-years {
     width: 125px;
     background-color: #309255;
     padding: 10px 20px;
@@ -28358,7 +28358,7 @@ only screen and (max-width: 767px) {
     position: absolute;
     top: 50px;
     right: 520px;
-  }
+  } */
 
   #additionalInterest {
     margin-top: 20px;
@@ -28372,7 +28372,7 @@ only screen and (max-width: 767px) {
     margin-left: 37px;
   }
 
-  .about-images .about-years {
+  /* .about-images .about-years {
     width: 111px;
     height: 130px;
     background-color: #309255;
@@ -28382,9 +28382,9 @@ only screen and (max-width: 767px) {
     position: absolute;
     top: 50px;
     right: 265px;
-  }
+  } */
 
-  .about-images .about-years .years-icon {
+  /* .about-images .about-years .years-icon {
     background-color: #fff;
     text-align: center;
     width: 78px;
@@ -28396,7 +28396,7 @@ only screen and (max-width: 767px) {
     margin-top: -30px;
     position: relative;
     margin-left: -4px;
-  }
+  } */
 }
 
 @media only screen and (max-width: 320px) {
@@ -28406,7 +28406,7 @@ only screen and (max-width: 767px) {
     margin-left: 27px;
   }
 
-  .about-images .about-years {
+  /* .about-images .about-years {
     width: 111px;
     height: 130px;
     background-color: #309255;
@@ -28416,11 +28416,11 @@ only screen and (max-width: 767px) {
     position: absolute;
     top: 78px;
     right: 4px;
-  }
+  } */
 }
 
 @media only screen and (max-width: 375px) {
-  .about-images .about-years {
+  /* .about-images .about-years {
     width: 111px;
     height: 130px;
     background-color: #309255;
@@ -28430,7 +28430,7 @@ only screen and (max-width: 767px) {
     position: absolute;
     top: 109px;
     right: 4px;
-  }
+  } */
 }
 
 #additionalInterest {
