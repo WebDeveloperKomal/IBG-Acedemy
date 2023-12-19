@@ -1,7 +1,7 @@
 function saveCourses() {
 
     var tagsInput = document.getElementById('tags').value;
-    var tags = tagsInput.split(',').map(tag => tag.trim()); // Split and trim tags
+    var tags = tagsInput.split(',').map(tag => tag.trim());
 
     var saveCoursesData = {
         "courseName": [
@@ -15,13 +15,12 @@ function saveCourses() {
         ]
     };
 
-    console.log(JSON.stringify(saveCoursesData));
 
+    console.log(JSON.stringify(saveCoursesData));
 
     if (saveCoursesData != null) {
         alert("Message sent successfully!");
     }
-
 
     let headers = new Headers();
     headers.append('Content-Type', 'application/json');

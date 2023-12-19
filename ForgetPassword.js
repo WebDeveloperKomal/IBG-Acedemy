@@ -8,6 +8,7 @@ function reset() {
         newPassword: document.getElementById('newPassword').value,
     }
 
+
     if (submitForgotPasswordForm.forgotPasswordEmail
         && submitForgotPasswordForm.securityQuestion
         && submitForgotPasswordForm.answer
