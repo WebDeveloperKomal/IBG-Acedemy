@@ -19,7 +19,6 @@ function reset() {
     }
 
     console.log(JSON.stringify(reset));
-
     if (reset != null) {
         alert("message send successfully!")
     }
