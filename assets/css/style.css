@@ -28401,6 +28401,8 @@ only screen and (max-width: 767px) {
   } */
 }
 
+
+
 @media only screen and (max-width: 320px) {
   /* #homepage {
     width: 167px;
@@ -28437,4 +28439,22 @@ only screen and (max-width: 767px) {
 
 #additionalInterest {
   margin-top: 20px;
+}
+
+@media only screen and (max-width: 2560px) {
+  #homepage {
+    width: 62%;
+  }
+}
+
+@media only screen and (max-width: 1920px) {
+  #homepage {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 1366px) {
+  #homepage {
+    width: 102%;
+  }
 }
